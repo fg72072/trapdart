@@ -137,6 +137,16 @@ footer span {
 #boxes .box .bar {
   border: 2px solid;
   height: 35px;
+  background-color: #fff;
+}
+
+#boxes .box .bar-1:after {
+  content: " ";
+  width: 25%;
+  background-color: #000000;
+  height: 31px;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  display: block;
 }
 #boxes .box .inputs {
   background-color: var(--primary);

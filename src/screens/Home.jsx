@@ -73,7 +73,7 @@ function Home() {
                     <p>1000 TRAP = 0.02407 ETH</p>
                     <p>Max buy per wallet = 10 ETH</p>
                     <p>Round 1 tokens remaining: 8000000/8888888</p>
-                    <div className="bar w-100  h-3 my-2"></div>
+                    <div className="bar-1 w-100  h-3 my-2"></div>
                     <div className="form my-3">
                       <form>
                         <div className="inputs">
