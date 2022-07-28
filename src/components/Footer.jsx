@@ -6,21 +6,21 @@ function Footer() {
   return (
     <div>
       <footer>
-        <Row className="align-items-center">
-          <Col lg={3}>
-            <div className="copy-right">
+        <Row className="align-items-center justify-sm-center flex-column-reverse  flex-md-row">
+          <Col lg={3} md={3} sm={12}>
+            <div className="copy-right text-center">
               <span>© trapdigital 2022</span>
             </div>
           </Col>
-          <Col lg={9}>
-            <div className="wallet-btn footer-icons">
+          <Col lg={9} md={9} sm={12}>
+            <div className="wallet-btn  footer-icons">
               <span className="mx-3 ">
                 <img src={Telegram} alt="telegram.png" className="mx-2" />
                 Telegram
               </span>
               <span>
                 <img src={Twitter} alt="telegram.png" className="mx-2" />
-                Telegram
+                Twitter
               </span>
             </div>
           </Col>
