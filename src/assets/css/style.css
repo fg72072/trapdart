@@ -10,6 +10,7 @@ body {
 
 p {
   margin-bottom: 0 !important;
+  font-weight: 500;
 }
 
 img {
@@ -19,6 +20,20 @@ img {
 a {
   text-decoration: none !important;
 }
+input {
+  border: none;
+  margin: 0;
+}
+
+input:focus {
+  border: none;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
 .primary-btn {
   padding: 1px 25px;
   border: 3px solid black;
@@ -41,15 +56,45 @@ a {
 header {
   background-color: var(--primary);
 }
+.mobile-header {
+  background-color: var(--primary);
+}
+.navbar-toggler {
+  background-color: white;
+}
+.me-auto li {
+  margin: 10px;
+}
+header nav {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+}
+header nav ul li {
+  color: white;
+  list-style: none;
+  padding: 0 20px;
+}
+header nav ul li a {
+  color: #fff;
+}
+header nav ul li a:hover {
+  color: #fff;
+}
 header .logo img {
-  width: 90px;
+  width: 50px;
 }
 .wallet-btn {
   display: flex;
-  width: 98%;
   height: 100%;
   align-items: center;
   justify-content: flex-end;
+}
+.wallet-btn button {
+  background-color: aliceblue;
+}
+.wallet-btn button:focus {
+  color: black;
 }
 
 /* ======================Footer-styling======================= */
@@ -77,4 +122,99 @@ footer span {
   flex-direction: column;
   align-items: center;
   padding: 10px 0px;
+}
+
+/* =======================boxes==================== */
+.box {
+  padding: 10px 20px;
+  border: 3px solid;
+  border-radius: 40px;
+  text-align: center;
+}
+#boxes .box p {
+  margin: 5px 0px;
+}
+#boxes .box .bar {
+  border: 2px solid;
+  height: 35px;
+}
+#boxes .box .inputs {
+  background-color: var(--primary);
+  border-radius: 25px;
+  padding: 3px 0px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+#boxes .box .inputs input {
+  border: none;
+  border-radius: 35px;
+  margin: 0px 5px;
+}
+
+/* ----------------mailing-list------------------ */
+.send-portfolio {
+  padding: 0px 0px 80px;
+}
+.parent-mail .inputs {
+  background-color: var(--primary);
+  border-radius: 25px;
+  color: white;
+}
+
+.parent-mail .inputs label {
+  width: 81%;
+  margin: 0px 0px 0px 70px;
+  padding: 0px 4px;
+}
+.send-portfolio a {
+  color: #fff;
+}
+.send-portfolio .btn:hover {
+  cursor: auto;
+}
+.send-portfolio .btn:hover a {
+  color: #000000;
+}
+.parent-mail .inputs label input {
+  width: 60%;
+  border-radius: 35px;
+  float: right;
+  padding: 0px 20px;
+}
+
+/* ------------------------voting------------------------- */
+
+.box-inner-btn button {
+  width: 35%;
+  margin: 5px;
+  padding: 11px 0px;
+  border-radius: 36px;
+}
+.box-inner-calc {
+  display: flex;
+  justify-content: space-evenly;
+}
+#voting .box-1 {
+  border-radius: 30px;
+}
+.box-inner-btn button.voting-closed {
+  width: 80%;
+  margin: 20px 0px;
+}
+
+#community .box .inner-box {
+  background: #fefefe;
+  box-shadow: 0px 0px 12px rgb(0 0 0 / 40%);
+  width: 400px;
+  height: 270px;
+  margin: 70px auto;
+}
+#community .box .inner-box.winner {
+  box-shadow: 0px 0px 70px rgb(0 0 0 / 70%);
+}
+#community .box button {
+  padding: 3px 35px;
 }
