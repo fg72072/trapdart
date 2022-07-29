@@ -6,9 +6,9 @@ function Footer() {
   return (
     <div>
       <footer>
-        <Row className="align-items-center justify-sm-center flex-column-reverse  flex-md-row">
+        <Row className="align-items-center justify-sm-center flex-column-reverse flex-md-row">
           <Col lg={3} md={3} sm={12}>
-            <div className="copy-right text-center">
+            <div className="copy-right">
               <span>© trapdigital 2022</span>
             </div>
           </Col>

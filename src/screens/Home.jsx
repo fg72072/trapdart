@@ -12,7 +12,7 @@ function Home() {
           <div className="sec-padding">
             <Row>
               <Col lg={12}>
-                <div className="main">
+                <div className="main mt-5">
                   <div className="img d-flex justify-content-center">
                     <img src={BannerLogo} alt="Banner-img.png" />
                   </div>
@@ -22,7 +22,7 @@ function Home() {
                       <button className="btn primary-btn my-3">
                         Read Whitepaper
                       </button>
-                      <button className="btn secondry-btn my-3">
+                      <button className="btn secondry-btn mb-5">
                         Read Whitepaper
                       </button>
                     </div>
@@ -65,7 +65,7 @@ function Home() {
           <div className="sec-padding">
             <Row className="gy-5">
               <Col lg={12}>
-                <div className="main">
+                <div className="main mt-5">
                   <div className="box">
                     <p>
                       Round 1 of ICO ends 31st October 2022 or when sold out
@@ -148,7 +148,7 @@ function Home() {
       {/* ==============================Mailing-list====================== */}
       <section id="mailing-list">
         <div className="sec-padding">
-          <Container className="w-80">
+          <div className="custom-container-big">
             <Row>
               <Col>
                 <div className="main-mailing-list">
@@ -165,7 +165,7 @@ function Home() {
                 </div>
               </Col>
             </Row>
-          </Container>
+          </div>
           <MailingList />
         </div>
       </section>

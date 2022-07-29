@@ -59,7 +59,7 @@ function Voting() {
                   </p>
                   <Row>
                     <Col lg={4}>
-                      <div className="inner-box w-100 d-flex justify-content-center align-items-center">
+                      <div className="inner-box w-80 d-flex justify-content-center align-items-center">
                         <div className="inner-box-img ">
                           <img src={Shape2} alt="image.png" className="w-25" />
                         </div>
@@ -68,7 +68,7 @@ function Voting() {
                       <p className="mb-3">Votes: 6</p>
                     </Col>
                     <Col lg={4}>
-                      <div className="inner-box w-100 d-flex justify-content-center align-items-center">
+                      <div className="inner-box w-80 d-flex justify-content-center align-items-center">
                         <div className="inner-box-img ">
                           <img src={Shape3} alt="image.png" className="w-25" />
                         </div>
@@ -77,7 +77,7 @@ function Voting() {
                       <p className="mb-3">Votes: 12</p>
                     </Col>
                     <Col lg={4}>
-                      <div className="inner-box d-flex justify-content-center align-items-center w-100">
+                      <div className="inner-box d-flex justify-content-center align-items-center w-80">
                         <div className="inner-box-img ">
                           <img src={Shape4} alt="image.png" className="w-25" />
                         </div>
@@ -96,7 +96,7 @@ function Voting() {
                   </p>
                   <Row>
                     <Col lg={4}>
-                      <div className="inner-box w-100 d-flex justify-content-center align-items-center">
+                      <div className="inner-box w-80 d-flex justify-content-center align-items-center">
                         <div className="inner-box-img ">
                           <img src={Shape5} alt="image.png" className="w-25" />
                         </div>
@@ -107,7 +107,7 @@ function Voting() {
                       <p className="mb-3">Votes: 6</p>
                     </Col>
                     <Col lg={4}>
-                      <div className="inner-box w-100 d-flex justify-content-center align-items-center">
+                      <div className="inner-box w-80 d-flex justify-content-center align-items-center">
                         <div className="inner-box-img ">
                           <img src={Shape6} alt="image.png" className="w-25" />
                         </div>
@@ -119,7 +119,7 @@ function Voting() {
                       <p className="mb-3">Votes: 12</p>
                     </Col>
                     <Col lg={4}>
-                      <div className="inner-box winner d-flex justify-content-center align-items-center w-100">
+                      <div className="inner-box winner d-flex justify-content-center align-items-center w-80">
                         <div className="inner-box-img ">
                           <img src={Shape7} alt="image.png" className="w-25" />
                         </div>
@@ -141,7 +141,7 @@ function Voting() {
                   </p>
                   <Row>
                     <Col lg={4}>
-                      <div className="inner-box w-100 d-flex justify-content-center align-items-center">
+                      <div className="inner-box w-80 d-flex justify-content-center align-items-center">
                         <div className="inner-box-img ">
                           <img src={Shape8} alt="image.png" className="w-25" />
                         </div>
@@ -152,7 +152,7 @@ function Voting() {
                       <p className="mb-3">Votes: 6</p>
                     </Col>
                     <Col lg={4}>
-                      <div className="inner-box winner d-flex justify-content-center align-items-center w-100">
+                      <div className="inner-box winner d-flex justify-content-center align-items-center w-80">
                         <div className="inner-box-img ">
                           <img src={Shape9} alt="image.png" className="w-25" />
                         </div>
@@ -164,7 +164,7 @@ function Voting() {
                       <p className="mb-3">Votes: 82</p>
                     </Col>
                     <Col lg={4}>
-                      <div className="inner-box w-100 d-flex justify-content-center align-items-center">
+                      <div className="inner-box w-80 d-flex justify-content-center align-items-center">
                         <div className="inner-box-img ">
                           <img src={Shape10} alt="image.png" className="w-25" />
                         </div>

@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 function MailingList() {
   return (
     <div>
-      <Container>
+      <div className="custom-container-big">
         <div className="parent-mail pb-5">
           <div className="row">
             <div className="col-12">
@@ -53,7 +53,7 @@ function MailingList() {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

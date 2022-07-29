@@ -34,15 +34,15 @@ function Header() {
 
         <Row className="gx-0 pc-header">
           <Col lg={2} md={2} sm={2}>
-            <div className="logo">
+            <div className="logo ">
               <Link to="/">
-                <img src={Logo} alt="Logo" />
+                <img src={Logo} alt="Logo" className="ml-3" />
               </Link>
             </div>
           </Col>
           <Col lg={10} md={10} sm={10}>
             <nav>
-              <ul className="d-flex align-items-center  px-3">
+              <ul className="d-flex align-items-center  pl-3">
                 <li>
                   <Link to={"/community"}>Community Art</Link>
                 </li>
