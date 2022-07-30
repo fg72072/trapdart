@@ -2,6 +2,7 @@ import React from "react";
 import { Header, Footer, MailingList } from "../components/index";
 import { Container, Row, Col } from "react-bootstrap";
 import { BannerLogo } from "../components/images";
+
 function Home() {
   return (
     <div>
