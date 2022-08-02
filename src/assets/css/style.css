@@ -242,3 +242,29 @@ footer span {
 #community .box button {
   padding: 3px 35px;
 }
+.blur-div{
+  filter: blur(3px);
+}
+
+.subscribe-form .custom-input-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 25px;
+  background-color: var(--primary);
+  color: #fff;
+    border-radius: 20px;
+}
+.subscribe-form .custom-input-box input{
+  border-radius: 35px;
+  padding: 0rem 1rem;
+  /* width: 40%; */
+}
+.loader-section{
+  height: calc(100vh );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

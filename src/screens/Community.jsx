@@ -181,8 +181,10 @@ function Voting() {
             </Row>
           </Container>
         </div>
-        <div className="mt-5">
+        <div className="mt-5 mb-5">
           <MailingList />
+          <MailingList />
+
         </div>
       </section>
       <Footer />

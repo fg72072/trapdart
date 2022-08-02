@@ -66,7 +66,7 @@ function Home() {
           <div className="sec-padding">
             <Row className="gy-5">
               <Col lg={12}>
-                <div className="main mt-5">
+                <div className="main mt-5 blur-div">
                   <div className="box">
                     <p>
                       Round 1 of ICO ends 31st October 2022 or when sold out
@@ -167,6 +167,7 @@ function Home() {
               </Col>
             </Row>
           </div>
+          <MailingList />
           <MailingList />
         </div>
       </section>

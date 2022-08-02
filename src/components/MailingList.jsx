@@ -1,56 +1,86 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 function MailingList() {
+  const [email,setEmail] = useState('');
+  const [error,setError] = useState('');
+  const [success,setSuccess] = useState('');
+  const [isclick,setIsclick] = useState(false);
+  const Subscribe = async (e) => {
+      e.preventDefault();
+      setIsclick(true);
+      await axios.post(process.env.REACT_APP_SUBSCRIPTION_API_URL+'subscribe', {
+          email:email,
+      },{headers:{
+          "Accept" : "application/json"
+      }})
+      .then(function (res) {
+          setSuccess(res.data.message);
+          setTimeout(() => {
+          setSuccess('');
+          }, 3000);
+          setIsclick(false);
+      })
+      .catch(function (error) {
+          setError(JSON.parse(error.request.response))
+          setTimeout(() => {
+            setError('');
+            }, 3000);
+          setIsclick(false);
+      });
+  }
   return (
     <div>
       <div className="custom-container-big">
-        <div className="parent-mail pb-5">
+        <div className="parent-mail ">
           <div className="row">
             <div className="col-12">
               <div className="form my-1">
-                <form>
-                  <div className="inputs">
+                <form onSubmit={(e) => Subscribe(e)} className="subscribe-form">
+                  <div className="custom-input-box">
                     <label name="trap_tokens" htmlFor="trap_tokens">
                       Join our mailing list for the latest news
-                      <input
-                        type="text"
+                    </label>
+                    <div className="input-box">
+                    <input
+                        type="email"
                         id="trap_tokens"
                         placeholder="Your email addres"
+                        value={email}
+                        onChange={(e)=>setEmail(e.target.value)}
                       />
-                    </label>
+                    
+                    </div>
                     <button className="primary-btn">Sign me up!</button>
                   </div>
+                    
                 </form>
               </div>
             </div>
-            <div className="col-12">
-              <div className="form my-1">
-                <form>
-                  <div className="inputs">
-                    <label name="trap_tokens" htmlFor="trap_tokens">
-                      Join our mailing list for the latest news
-                      <input
-                        type="text"
-                        id="trap_tokens"
-                        placeholder="Your email addres"
-                      />
-                    </label>
-                    <button className="primary-btn">Sign me up!</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div className="col-12">
+           
+            {
+              success ? 
+              <div className="col-12">
               <div className="form my-1">
                 <div className="inputs px-5 py-1 text-center">
-                  <p>
-                    {" "}
+                  <p >
                     Thank you for signing up to the mailing list. You will
                     receive latest news and and announcements via email.
                   </p>
                 </div>
               </div>
+            </div> :
+            error && 
+            <div className="col-12">
+            <div className="form my-1">
+              <div className="inputs px-5 py-1 text-center">
+                <p className="text-danger">
+                {error.email}
+                </p>
+              </div>
             </div>
+          </div>
+            }
           </div>
         </div>
       </div>
