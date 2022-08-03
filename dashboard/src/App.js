@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import {SideBar,Header} from './components/Index';
-import {AddVote, Burn, Community, Home, ListVote, Release, Sale} from './screens/Index';
+import {AddVote, Burn, Community, EditCommunity, Home, ListVote, Release, Sale} from './screens/Index';
 import { useEagerConnect, useInactiveListener } from './hooks/useEagerConnect';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 
@@ -30,6 +30,7 @@ function App() {
         <Route path="/add-vote" element={<AddVote/>}  />
         <Route path="/list-vote" element={<ListVote/>}  />
         <Route path="/list-community" element={<Community/>}  />
+        <Route path="/edit-community/:id" element={<EditCommunity/>}  />
 
         </Routes>
       </div>

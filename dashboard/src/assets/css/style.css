@@ -41,7 +41,7 @@ body{
     align-items: center;
 }
 .sidebar .logo img{
-    width: 170px;
+    width: 85px;
 }
 .sidebar .logo h4{
     color: var(--white);
@@ -1272,4 +1272,20 @@ input[type="checkbox"]{
 .input-flex-group input{
     width: 48%;
     margin-top: 0.5rem;
+}
+.table tr th{
+    font-size: 16px;
+    color: var(--secondary) !important;
+}
+.table tr td{
+    font-size: 15px;
+}
+.table tr th,.table tr td{
+    padding: 1.3rem 1.3rem;
+}
+.community-form{
+    padding: 2rem 1.5rem;
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    margin-top: 2rem;
 }

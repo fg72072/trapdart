@@ -5,4 +5,5 @@ import Release from './Release';
 import AddVote from './AddVote';
 import ListVote from './ListVote';
 import Community from './Community';
-export {Home,Sale,Burn,Release,AddVote,ListVote,Community}
+import EditCommunity from './EditCommunity';
+export {Home,Sale,Burn,Release,AddVote,ListVote,Community,EditCommunity}

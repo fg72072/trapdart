@@ -22,8 +22,8 @@ function AddVote(){
     //  title , ipfs , description , proposer  
 
       const [title , setTitle] = useState()
-      const [isPercent , setIsPercent] = useState(false)
       const [description , setDescription] = useState()
+      const [isPercent , setIsPercent] = useState(true)
       const [proposer , setProposer] = useState()
       const [imageURL, setImageURL] = useState() 
       const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0') 

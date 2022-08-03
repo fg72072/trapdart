@@ -23,9 +23,7 @@ function Home() {
                       <button className="btn primary-btn my-3">
                         Read Whitepaper
                       </button>
-                      <button className="btn secondry-btn mb-5">
-                        Read Whitepaper
-                      </button>
+                   
                     </div>
                     <div className="long-bar">
                       <div className="grey my-1">
@@ -34,12 +32,7 @@ function Home() {
                           and click to check eligibility
                         </button>
                       </div>
-                      <div className=" black my-2 ">
-                        <button className="btn secondry-btn w-100">
-                          Round 1 of ICO starts October 1st 2022. Connect wallet
-                          and click to check eligibility.
-                        </button>
-                      </div>
+                      
                       <div className="my-2">
                         <button className="primary-btn">
                           You are whitelisted!
@@ -66,7 +59,7 @@ function Home() {
           <div className="sec-padding">
             <Row className="gy-5">
               <Col lg={12}>
-                <div className="main mt-5 blur-div">
+                <div className="main mt-5 ">
                   <div className="box">
                     <p>
                       Round 1 of ICO ends 31st October 2022 or when sold out
@@ -74,7 +67,11 @@ function Home() {
                     <p>1000 TRAP = 0.02407 ETH</p>
                     <p>Max buy per wallet = 10 ETH</p>
                     <p>Round 1 tokens remaining: 8000000/8888888</p>
-                    <div className="bar-1 w-100  h-3 my-2"></div>
+                    <div className="bar-1 w-100  h-3 my-2" >
+                      <div className="inner" style={{width:'10%'}}>
+
+                      </div>
+                    </div>
                     <div className="form my-3">
                       <form>
                         <div className="inputs">
@@ -110,7 +107,7 @@ function Home() {
                 </div>
               </Col>
               <Col lg={12}>
-                <div className="main">
+                <div className="main blur-div">
                   <div className="box">
                     <p>
                       Round 1 of ICO ends 31st October 2022 or when sold out
@@ -157,7 +154,7 @@ function Home() {
                     <div className="btn secondry-btn w-100">
                       Interested artists please send your portfolio and social
                       media accounts to
-                      <a href="mailto:artists@trapdart.com">
+                      <a href="mailto:artists@trapdart.com?subject=Artist application">
                         {" "}
                         artists@trapdArt.com
                       </a>

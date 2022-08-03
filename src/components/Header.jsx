@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "./images";
+import { Logo, metamask } from "./images";
 import { Container, Row, Col, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useWeb3React } from "@web3-react/core";
@@ -12,8 +12,6 @@ function Header(props) {
     activate,
     account
 } = useWeb3React();
-
-
 
   return (
     <>
@@ -39,11 +37,11 @@ function Header(props) {
                 <div className="wallet-btn">
                 {
                 !active ?
-                  <button className="btn primary-btn"  onClick={()=>{
+                  <button className="btn primary-btn flex-btn"  onClick={()=>{
                                         
                                         connectWallet(activate, props.setErrorMessage);
-                                    }}> Connect wallet</button>
-                : <button className="btn primary-btn" > Connected </button>
+                                    }}> <span>Connect wallet</span><img src={metamask}/></button>
+                : <button className="btn primary-btn flex-btn" > <span>Connected</span> <img src={metamask}/></button>
                                   }
                 </div>
               </li>
@@ -72,11 +70,11 @@ function Header(props) {
                   <div className="wallet-btn">
                   { 
                 !active || account==undefined?
-                  <button className="btn primary-btn"  onClick={()=>{
+                  <button className="btn primary-btn flex-btn"  onClick={()=>{
                                         
                                         connectWallet(activate, props.setErrorMessage);
-                                    }}> Connect wallet</button>
-                : <button className="btn primary-btn" > Connected </button>
+                                    }}> <span>Connect wallet</span><img src={metamask}/></button>
+                : <button className="btn primary-btn flex-btn" > <span>Connected</span> <img src={metamask}/></button>
                                   }
                   </div>
                 </li>

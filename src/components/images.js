@@ -12,6 +12,7 @@ import Shape7 from "../assets/images/shape-7.png";
 import Shape8 from "../assets/images/shape-8.png";
 import Shape9 from "../assets/images/shape-9.png";
 import Shape10 from "../assets/images/shape-10.png";
+import metamask from "../assets/images/metamask.png";
 
 export {
   Logo,
@@ -28,4 +29,5 @@ export {
   Shape8,
   Shape9,
   Shape10,
+  metamask
 };
